@@ -16,7 +16,10 @@ export const Tasks = () => {
         taskList={taskList}
         setTaskList={setTaskList}
       />
-      <TaskLists />
+      <TaskLists
+        taskList={taskList}
+        setTaskList={setTaskList}
+      />
       <Footer />
     </div>
   )

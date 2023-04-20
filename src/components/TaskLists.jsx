@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TaskLists = () => {
+export const TaskLists = ({ taskList, setTaskList }) => {
   return (
     <div>TaskLists</div>
   )
