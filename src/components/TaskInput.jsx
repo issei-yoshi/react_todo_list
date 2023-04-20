@@ -1,8 +1,8 @@
 import React from 'react'
 
 export const TaskInput = ({ inputText, setInputText, taskList, setTaskList }) => {
-  const handleChange = () => {
-    
+  const handleChange = (e) => {
+    setInputText(e.target.value);
   }
 
   const handleSubmit = () => {
