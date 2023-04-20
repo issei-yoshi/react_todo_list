@@ -10,6 +10,34 @@ export const TaskLists = ({ taskList, setTaskList }) => {
     }
   }
 
+  const handleUpdate = (id) => {
+    const tasks =  [...taskList];
+    const task = tasks.find((task) => task.id == id);
+    task.edit = !task.edit;
+    setTaskList(tasks);
+  }
+
+  const handleSubmit = (id) => {
+    const newTasks = [...taskList];
+    const task = newTasks.find((task) => task.id === id);
+    task.edit = false;
+    setTaskList(newTasks);
+  }
+
+  const handleChange = (e, id) => {
+    const newTasks = [...taskList];
+    const task = newTasks.find((task) => task.id === id);
+    task.text = e.target.value;
+      setTaskList(newTasks);
+  }
+
+  const handleTodoClick = (id) => {
+    const newTasks = [...taskList];
+    const task = newTasks.find((task) => task.id === id);
+    task.completed = !task.completed;
+    setTaskList(newTasks);
+  }
+
   return (
     <>
       <div className='todo-list'>
