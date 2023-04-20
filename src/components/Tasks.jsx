@@ -20,7 +20,9 @@ export const Tasks = () => {
         taskList={taskList}
         setTaskList={setTaskList}
       />
-      <Footer />
+      <Footer
+        taskList={taskList}
+      />
     </div>
   )
 }
