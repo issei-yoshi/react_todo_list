@@ -8,6 +8,8 @@ export const Footer = ({ taskList }) => {
   const incompleteTask = allTask - completeTask;
 
   return (
-    <div>Footer</div>
+    <div className='footer'>
+      <p>全てのタスク:{allTask}  完了済み:{completeTask}  未完了:{incompleteTask}です</p>
+    </div>
   )
 }
