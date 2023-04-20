@@ -9,6 +9,7 @@ export const Tasks = () => {
   const [taskList, setTaskList] = useState([]);
 
   return (
+    <>
     <div className='todo-app'>
       <TaskInput
         inputText={inputText}
@@ -20,9 +21,10 @@ export const Tasks = () => {
         taskList={taskList}
         setTaskList={setTaskList}
       />
+    </div>
       <Footer
         taskList={taskList}
       />
-    </div>
+    </>
   )
 }
