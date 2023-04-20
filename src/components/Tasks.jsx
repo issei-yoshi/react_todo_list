@@ -9,7 +9,7 @@ export const Tasks = () => {
   const [taskList, setTaskList] = useState([]);
 
   return (
-    <div>
+    <div className='todo-app'>
       <TaskInput
         inputText={inputText}
         setInputText={setInputText}

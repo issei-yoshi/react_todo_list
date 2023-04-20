@@ -30,6 +30,7 @@ export const TaskInput = ({ inputText, setInputText, taskList, setTaskList }) =>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          className='new-todo'
           placeholder='ここにタスクを入力'
           onChange={handleChange}
           value={inputText}
