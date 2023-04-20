@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TaskInput = () => {
+export const TaskInput = ({ inputText, setInputText, taskList, setTaskList }) => {
   return (
     <div>TaskInput</div>
   )

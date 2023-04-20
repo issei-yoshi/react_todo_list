@@ -10,7 +10,12 @@ export const Tasks = () => {
 
   return (
     <div>
-      <TaskInput />
+      <TaskInput
+        inputText={inputText}
+        setInputText={setInputText}
+        taskList={taskList}
+        setTaskList={setTaskList}
+      />
       <TaskLists />
       <Footer />
     </div>
