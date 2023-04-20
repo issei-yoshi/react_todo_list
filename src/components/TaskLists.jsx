@@ -1,6 +1,15 @@
 import React from 'react'
 
 export const TaskLists = ({ taskList, setTaskList }) => {
+
+  const handleDelete = (id) => {
+    let res = window.confirm("本当によろしいですか？")
+    if(res){
+      const newTaskList = taskList.filter((task) => task.id !== id);
+      setTaskList(newTaskList);
+    }
+  }
+
   return (
     <>
       <div className='todo-list'>
