@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #f5f5f5;
+    color: #4d4d4d;
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:focus {
+    outline: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-app {
+    background: #fff;
+    margin: 130px 0 40px 0;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.todoapp input::placeholder {
+    font-style: italic;
+    font-weight: 300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-todo {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.4em;
+    border: 0;
+    color: inherit;
+    box-sizing: border-box;
+    padding: 16px 16px 16px 60px;
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+}
+
+.taskList {
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px solid #ededed;
+    padding: 16px;
+}
+
+.taskList input[type="checkbox"] {
+    width: 40px;
+    height: auto;
+    margin: auto 0;
+    border: none;
+}
+
+.footer {
+    color: #777;
+    height: 20px;
+    padding: 10px 15px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.edit {
+  margin: 2px 2px 2px 10px;
+}
+
+.delete {
+  margin: 2px;
 }
