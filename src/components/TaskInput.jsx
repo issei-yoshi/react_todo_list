@@ -10,7 +10,7 @@ export const TaskInput = ({ inputText, setInputText, taskList, setTaskList }) =>
     const taskId = uuid();
 
     e.preventDefault();
-    if (inputText == "") {
+    if (inputText === "") {
       return
     }
     setTaskList([

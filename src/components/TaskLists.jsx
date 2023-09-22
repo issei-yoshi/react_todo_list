@@ -12,7 +12,7 @@ export const TaskLists = ({ taskList, setTaskList }) => {
 
   const handleUpdate = (id) => {
     const tasks =  [...taskList];
-    const task = tasks.find((task) => task.id == id);
+    const task = tasks.find((task) => task.id === id);
     task.edit = !task.edit;
     setTaskList(tasks);
   }

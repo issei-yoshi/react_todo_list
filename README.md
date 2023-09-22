@@ -7,8 +7,6 @@
 - 「削除」ボタンをクリックして、確認完了すると該当のタスクは削除可能
 - 画面下に現在のタスクの状況が掲載されており、タスク左にチェックを入れると「完了済み」としてカウントされる
 
-デプロイ先のリンク
-https://issei-yoshi.github.io/react_todo_list/
 
 # Getting Started with Create React App
 
